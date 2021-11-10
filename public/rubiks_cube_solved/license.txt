@@ -1,0 +1,11 @@
+Model Information:
+* title:	Rubik's Cube solved
+* source:	https://sketchfab.com/3d-models/rubiks-cube-solved-1e23434674ba4a5486ef795cafc50394
+* author:	SusanKing (https://sketchfab.com/krolzuzannapl)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Rubik's Cube solved" (https://sketchfab.com/3d-models/rubiks-cube-solved-1e23434674ba4a5486ef795cafc50394) by SusanKing (https://sketchfab.com/krolzuzannapl) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
