@@ -1,7 +1,8 @@
-import React, { useRef, useState, useEffect } from "react"
-import { useFrame } from "@react-three/fiber"
-import { useGLTF } from "@react-three/drei"
+import React, { useRef, useState, Suspense, useEffect } from "react"
+import { Canvas, useFrame } from "@react-three/fiber"
+import { useGLTF, OrbitControls, ContactShadows, Environment } from "@react-three/drei"
 import { proxy, useSnapshot } from "valtio"
+import { HexColorPicker } from "react-colorful"
 
 const state = proxy({
   current: null,
@@ -56,4 +57,38 @@ function Cube() {
   )
 }
 
-export default Cube
+function Picker() {
+  const snap = useSnapshot(state)
+
+  return (
+    <div>
+      <HexColorPicker className="picker" color={snap.items[snap.current]} onChange={(color) => (state.items[snap.current] = color)} />
+      <h1>{snap.current ? snap.current : "pick color"}</h1>
+    </div>
+  )
+}
+
+export default function App() {
+  return (
+    <>
+      <Canvas shadows dpr={[1, 2]} camera={{ position: [12, 12, 20], fov: 50 }}>
+        <ambientLight intensity={0.5} />
+        <spotLight intensity={0.3} angle={0.1} penumbra={1} position={[10, 15, 10]} castShadow />
+        <Suspense fallback={null}>
+          <Cube />
+          <Environment files="hdr.hdr" />
+          <ContactShadows rotation-x={Math.PI / 2} position={[0, -0.8, 0]} opacity={0.25} width={10} height={10} blur={2} far={1} />
+        </Suspense>
+        <OrbitControls
+          autoRotate={true}
+          autoRotateSpeed={0.4}
+          enableZoom={false}
+          enablePan={false}
+          minPolarAngle={Math.PI / 3.5}
+          maxPolarAngle={Math.PI / 3.5}
+        />
+      </Canvas>
+      <Picker />
+    </>
+  )
+}
