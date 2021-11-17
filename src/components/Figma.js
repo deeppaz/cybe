@@ -33,7 +33,7 @@ export function Underlay() {
           Click on the part of the cube where you want to change the color
           </p>
           <div style={{ width: 10 }} />
-        <a href=""  style={{ flex: "1 1 0%", height: 30, fontSize: 25, lineHeight: "1.5em", color: "black", lineHeight: "30px", textAlign: "right" }}> <b>opensea</b></a>
+        <a href="https://opensea.io/collection/cybe"  style={{ flex: "1 1 0%", height: 30, fontSize: 25, lineHeight: "1.5em", color: "black", lineHeight: "30px", textAlign: "right" }}><img style={{width:"35px"}} src="https://seeklogo.com/images/O/opensea-logo-7DE9D85D62-seeklogo.com.png"/></a>
         </div>
         <div style={{ height: 60 }} />
         <div style={{ width: "100%", padding: 0, display: "inline-flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "center" }}>
@@ -119,7 +119,7 @@ export function Underlay() {
     return (
       <div style={{ position: "absolute", bottom: 40, right: 40 }}>
         <p style={{ flex: "1 1 0%", fontSize: 12, lineHeight: "1em", textAlign: "right", color: "black" }}>
-          <a href="http://cybe.vercel.app/">cybe.com</a> <a href="https://github.com/pmndrs">twitter</a> <a href="https://codesandbox.io/s/zxpv7">instagram</a>
+          <a href="http://cybe.vercel.app/">cybe</a><a href="https://opensea.io/collection/cybe">opensea</a>  <a href="https://twitter.com/0xcybe">twitter</a> <a href="https://www.instagram.com/0xcybe/">instagram</a>
         </p>
       </div>
     )
