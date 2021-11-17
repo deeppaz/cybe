@@ -61,7 +61,7 @@ function Picker() {
   const snap = useSnapshot(state)
 
   return (
-    <div>
+    <div style={{ display: snap.current ? "block" : "none" }}>
       <HexColorPicker className="picker" color={snap.items[snap.current]} onChange={(color) => (state.items[snap.current] = color)} />
       <h1>{snap.current ? snap.current : "pick color"}</h1>
     </div>
