@@ -33,7 +33,7 @@ export function Underlay() {
           Click on the part of the cube where you want to change the color
           </p>
           <div style={{ width: 10 }} />
-        <a href="https://opensea.io/collection/cybe"  style={{ flex: "1 1 0%", height: 30, fontSize: 25, lineHeight: "1.5em", color: "black", lineHeight: "30px", textAlign: "right" }}><img style={{width:"35px"}} src="https://seeklogo.com/images/O/opensea-logo-7DE9D85D62-seeklogo.com.png"/></a>
+        <a href="https://opensea.io/collection/cybe"  style={{ zIndex:1, flex: "1 1 0%", height: 30, fontSize: 25, lineHeight: "1.5em", color: "black", lineHeight: "30px", textAlign: "right" }}><img style={{width:"35px"}} src="https://seeklogo.com/images/O/opensea-logo-7DE9D85D62-seeklogo.com.png"/></a>
         </div>
         <div style={{ height: 60 }} />
         <div style={{ width: "100%", padding: 0, display: "inline-flex", flexDirection: "row", alignItems: "flex-start", justifyContent: "center" }}>
@@ -46,6 +46,7 @@ export function Underlay() {
           <div style={{ width: 10 }} />
           <p
             style={{
+              zIndex:1,
               transform: "rotate3d(0, 0, 1, 90deg) translate3d(100%,10px,0)",
               transformOrigin: "right",
               fontSize: 12,
@@ -55,7 +56,7 @@ export function Underlay() {
               color: "black",
               whiteSpace: "nowrap",
             }}>
-            DRAG POINTER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ●
+           <a href="https://mintcybe.vercel.app/"  style={{fontSize: 25}}>  MINT CYBE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ● </a> 
           </p>
         </div>
         <div style={{ height: 10 }} />
